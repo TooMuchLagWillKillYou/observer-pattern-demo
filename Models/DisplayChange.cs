@@ -1,3 +1,6 @@
+using System;
+using Interfaces;
+
 namespace Models
 {
     public class DisplayChange : IObserver
@@ -10,7 +13,7 @@ namespace Models
             _subject.Subscribe(this);
         }
 
-        public override Update(string symbol, decimal price)
+        public void Update(string symbol, decimal price)
         {
             Console.WriteLine(String.Format("Observer has been notified. Price changed to {0}{1}", symbol, price));
         }
