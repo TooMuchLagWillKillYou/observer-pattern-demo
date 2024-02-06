@@ -8,7 +8,7 @@ namespace Models
     {
         public string Symbol { get; set; }
         private decimal _price;
-        private decimal Price
+        public decimal Price
         {
             get => _price;
             set

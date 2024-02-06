@@ -15,7 +15,7 @@ namespace Models
 
         public void Update(string symbol, decimal price)
         {
-            Console.WriteLine(String.Format("Observer has been notified. Price changed to {0}{1}", symbol, price));
+            Console.WriteLine(String.Format("Observer has been notified. Price changed to {0} {1}", symbol, price));
         }
     }
 }
